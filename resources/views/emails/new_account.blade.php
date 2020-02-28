@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .email_body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image_section {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        .table {
+            border: 1px solid black;
+            padding: 2em;
+            width: 50%;
+            background-color: #f9fafc;
+        }
+
+        .reset_text a {
+            color: #f07c10;
+        }
+
+        .reset_text p {
+            text-align: center;
+        }
+
+        .text h5 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="email_body">
+    <div class="table">
+        <div class="image_section">
+            <img class="can_logo" src="https://www.cantaloupeconsult.com/images/cantaloupe_logo.png">
+        </div>
+        <div class="text">
+            <h5>Your account has been created successfully on HRWS application. Click the link below to reset the password.</h5>
+        </div>
+        <div class="reset_text">
+            <p class="reset_text">
+            <p><a href="{{url('/')}}/reset-password/{{$token}}">Reset Password</a></p>
+        </div>
+        <div class="text">
+            <h5>This password reset link is only valid for the next 2 days.</h5>
+        </div>
+        <div class="text">
+            <h5>Thanks,<br>HRWS</h5>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
